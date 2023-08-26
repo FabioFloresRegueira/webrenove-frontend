@@ -1,0 +1,128 @@
+.container-edicao {
+    display: flex;
+    flex-direction: row; 
+    align-content: space-between; 
+}
+
+.container-numero{
+    background-color: darkslategrey;
+}
+
+.container-numero h1 {
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.container-edicao .container-botoes {
+    /* determina o alinhamento no container-botoes */
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; 
+    justify-content: flex-start;
+
+}
+
+.container-edicao .container-botoes ul{
+    list-style: none;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+    
+
+.container-edicao .container-botoes .btnacao{
+    background-color: darkslategrey;
+    color: #cacaca;
+    border:  1px solid #fff;
+    border-radius: 1rem;
+    border: 1px solid transparent; 
+    opacity: 1;
+    cursor: poninter;
+    padding: 0.5rem 1rem;
+    resize: none; 
+    transition: all ease 0.2s;
+
+}
+
+.container-edicao .container-botoes .btnacao:hover{
+    background-color: teal;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0.4);
+    color: #cacaca;
+}
+
+
+.container-edicao .container-campos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5rem;
+}
+
+.container-edicao .container-campos h1 {
+    font-size:  28px;
+    margin: 20px 0; 
+    color: red; 
+    text-align: center;
+}
+
+
+.container-edicao .container-campos .inputdescricao{
+    height:  40px;
+    width: 130%;
+    margin-bottom:  10px;
+    border: 1px solid #797979;
+    border-radius:  5px;
+    padding: 10px;
+    font-size:  17px;
+    resize: none; 
+    
+}
+
+.container-edicao .container-campos .inputdatapicker{
+    height:  40px;
+    width: 100%;
+    margin-bottom:  10px;
+    margin-left: 30px;
+    border: 1px solid #797979;
+    border-radius:  5px;
+    padding: 10px;
+    font-size:  17px;
+    resize: none; 
+    
+}
+
+.container-edicao .container-campos select{
+    height:  40px;
+    width: 100%;
+    margin-bottom:  10px;
+    border: 1px solid #797979;
+    border-radius:  5px;
+    padding: 10px;
+    font-size:  17px;
+    resize: none; 
+
+}
+
+.container-edicao .container-campos textarea{
+    width: 130%;
+    height: 250px;
+    margin-bottom: 10px;
+    border: 1px solid #797979;
+    border-radius:  5px;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+
+.container-edicao .container-campos .container-radio {
+    /* determina o alinhamento no container-botoes */
+    display: flex; 
+    flex-direction: row;
+    align-content: center; 
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 3px solid black;
+    border-radius:  5px;
+    background: white;
+}
+

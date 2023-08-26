@@ -1,0 +1,23 @@
+/*
+  Rodapé da pagina
+*/
+.navfooter{
+  /*
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  1rem 1rem;
+  
+  background-color: darkslategrey; 
+  color: white; 
+  border:  1px solid #000;
+  
+  /*border: 1px solid #797979;*/ 
+  opacity: 1;
+}
+

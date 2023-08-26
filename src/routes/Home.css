@@ -1,0 +1,345 @@
+/*
+.Home{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content:space-between;
+    font-size: 1.5rem;  
+      
+
+    border:  1px solid #000;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    opacity: 1;
+}
+*/
+
+.container-home{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: start;
+    align-content: space-between;
+    justify-content: flex-start;
+    background-color: #fff; 
+}
+
+.container-left{
+/* alinhamento do formulario */ 
+    display:  flex;
+    flex-direction: row;
+    
+    padding:  5px;
+    padding-right: 30px;
+
+    background-color: #fff; /*bisque;*/
+    margin-left: 20px;
+
+    border-radius: 15px;
+    border: 1px solid #e9e9e9;
+    
+    padding: 3rem; 
+    margin: 2rem 1rem 1rem 1rem; 
+}
+
+
+.container-left h1{
+    font-size:  28px;
+    margin: 20px 0; 
+    color: red; 
+    text-align: center;
+}
+
+
+.container-left p{
+    font-size:  18px;
+    margin: 20px 0 ; 
+    max-width: 300px;
+    text-align: center;
+}
+
+
+/* ===========================================================
+  container-form 
+==============================================================*/
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width:  350px;
+}
+
+.container-form input{
+    height:  40px;
+    margin-bottom:  0.5px;
+    border: 1px solid #797979;
+    border-radius:  5px;
+    padding: 10px;
+    font-size:  17px;
+    resize: none; 
+    
+}
+
+.container-form select{
+    height:  40px;
+    margin-bottom:  10px;
+    border: 1px solid #797979;
+    border-radius:  5px;
+    padding: 10px;
+    font-size:  17px;
+    resize: none; 
+}
+
+.container-form textarea{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    border: 1px solid #797979;
+    border-radius:  5px;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+
+.container-form .container-radio {
+    /* determina o alinhamento no container-botoes */
+        display: flex; 
+        flex-direction: row;
+        align-content: center; 
+        align-items: center;
+        margin-bottom: 2rem;
+        border: 3px solid black;
+        border-radius:  5px;
+        background: white;
+    }
+
+
+/* BOTOES */ 
+
+.container-form .container-botoes {
+    /* determina o alinhamento no container-botoes */
+        display: flex; 
+        flex-direction: row;
+        align-content: space-between; 
+        /*margin-left: 1rem;*/
+            
+    }
+    
+.container-form .container-botoes .btn-salvar{
+    background-color: darkslategrey;
+    color: #cacaca;
+    border:  1px solid #fff;
+    border-radius: 1rem;
+    border: 1px solid transparent; 
+    opacity: 1;
+    cursor: poninter;
+    padding: 0.5rem 1rem;
+    resize: none; 
+    transition: all ease 0.2s;
+
+}
+
+.container-form .container-botoes .btn-salvar:hover{
+    background-color: teal;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0.4);
+    color: #cacaca;
+}
+
+
+
+/* ===========================================================
+  container-servicos 
+==============================================================*/
+
+.container-servicos{
+    display: flex;
+    flex-direction: row;
+
+    align-content: space-between; 
+    justify-content: flex-start; 
+
+    width: 1000px;
+
+    background-color: #fff;
+    background-color: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 1px solid #e9e9e9;
+
+    padding: 3rem; 
+    margin: 2rem 1rem 1rem 1rem; 
+}
+
+.container-servicos h2{
+    font-size:  20px; 
+    font-weight: 100%;
+}
+
+.container-servicos h3{
+    font-size: 15px;
+    font-weight: 100%;
+
+}
+
+.container-servicos .container-botoes {
+    /* determina o alinhamento no container-botoes */
+        display: flex; 
+        flex-direction: row; 
+        align-content: space-between; 
+        /*margin-left: 1rem; */
+    }
+    
+
+.container-servicos .container-botoes .btnacaocard {
+    /* ajusta o format, dos botões */ 
+    background-color: darkslategrey;
+    color: #cacaca;
+    border:  1px solid #fff;
+    border-radius: 1rem;
+    border: 1px solid transparent; 
+    opacity: 1;
+    cursor: poninter;
+
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0.5rem;
+    resize: none; 
+    transition: all ease 0.2s;
+    
+}
+    
+.container-servicos .container-botoes .btnacaocard:hover{
+        background-color: teal;
+        box-shadow: 0 0 0 2px rgb(0, 0, 0.4);
+        color: #cacaca;
+}
+
+
+/* QUEBRA DE LINHA EM CSS*/
+.container-servicos .txtinfo {
+    /*width: 950px; */
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+
+/* ===========================================================
+  container-filtro
+==============================================================*/
+.container-filtro {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; 
+    justify-content: flex-start; 
+
+    width: 250px;
+
+    padding: 1rem; 
+    margin: 2rem 0.5rem 0.5rem auto;
+
+    border-radius: 15px;
+    border: 1px solid blue; 
+ 
+}
+.container-filtro h1{
+    padding-right: 0.5rem;
+}
+
+.container-filtro .container-filtro-logo{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between; 
+    justify-content: flex-start; 
+}
+
+.container-filtro .container-filtro-campos{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; 
+    justify-content: flex-start;
+}
+
+.container-filtro .container-filtro-campos input{
+    width: 200px;
+}
+
+.container-filtro .container-filtro-campos ul{
+    list-style: none;
+}
+
+.container-filtro .container-filtro-botoes {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between; 
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container-filtro .container-filtro-botoes .btnfiltro{
+    /* ajusta o format, dos botões */ 
+    background-color: darkslategrey;
+    color: #cacaca;
+    
+    border:  1px solid #fff;
+    border-radius: 1rem;
+    opacity: 1;
+    cursor: poninter;
+
+    padding: 10px 30px;
+    resize: none; 
+    transition: all ease 0.2s;
+}
+
+.container-filtro .container-filtro-botoes .btnfiltro:hover{
+    background-color: teal;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0.4);
+    color: #cacaca;
+}
+
+.container-filtro input{
+    height:  40px;
+    margin-bottom:  0.5px;
+    border: 1px solid #797979;
+    border-radius:  5px;
+    padding: 10px;
+    font-size:  17px;
+    resize: none; 
+    
+}
+
+.container-filtro select{
+    height:  40px;
+    margin-bottom:  10px;
+    border: 1px solid #797979;
+    border-radius:  5px;
+    padding: 10px;
+    font-size:  17px;
+    resize: none; 
+}
+
+
+
+
+/* https://blog.betrybe.com/react/react-modal/ */
+/*
+.container-servicos .container-botoes .modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid green;
+    background-color: #ffbf00;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+ .container-servicos .container-botoes .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(154, 62, 62, 0.8);
+  }
+*/
